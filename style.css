@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(6deg,rgba(242, 127, 44, 1) 0%, rgba(237, 191, 121, 1) 50%, rgba(245, 211, 159, 1) 100%);
+    overflow-x: hidden;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients */
+nav{
+    margin: 3em;
+    box-shadow: 5px 5px black;
+}
+nav ul{
+    margin: 0;
+    background-color: #873a11;
+    display: flex;
+    border: 3px solid black;
+    list-style: none;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: .5em 1em;
+    transition: all 0.5s ease;
+}
+nav a:hover{
+    color: #dfa073;
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    font-size: 4.4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+p{
+    font-size: x-large;
+}
+p a{
+    text-decoration: underline;
+    color: black;
+}
+header section{
+    display: flex;
+    padding-top: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    height: 25em;
+    border-bottom: 3px solid black;
+    background-color: #dfa073;
+    gap: 0;
+}
+header section div{
+    flex: 1;
+}
+header section img{
+    width: auto;
+    scale: 0.7;
+
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3em;
+    padding-top: 6em;
+    padding-bottom: 7em;
+    padding-left: 10em;
+    background-color: #dfa073;
+    border: 3px solid black;
+    margin: 3em;
+    box-shadow: 5px 5px black;
+}
+section h2{
+    flex-basis: 100%;
+}
+section ul{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    scrollbar-width: none;
+    list-style: none;
+    padding: 0;
+    gap: 3em;
+}
+
+.tweede_nav{
+    margin: 0 auto;
+    box-shadow: none;
+
+}
+.tweede_nav ul{
+    display: flex;
+    border: none;
+    justify-content: center;
+    list-style: none;
+    gap: 5em;
+    background-color: transparent;
+    padding: 0;    
+}
+.tweede_nav li{
+    border: 3px solid black;
+    height: 5em;
+    text-align: center;
+    width: 16em;
+    box-shadow: 5px 5px black;
+    background-color:#d07f45;
+}
+.tweede_nav a{
+    height: 60%;
+    font-size: xx-large;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    background-color: #d07f45;
+    height: 35em;
+    border: 3px solid;
+    box-shadow: 5px 5px black;
+    margin-bottom: 1em;
+}
+article h2{
+    font-size: large;
+    margin: 0;
+    padding-left: 25px;
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+article p:nth-of-type(1){
+    font-size: medium;
+    margin: 0;
+    background-color: #d07f45;
+    padding: .5em;
+    text-align: center  ;
+    border-bottom: 3px solid black;
+}
+article img{
+    align-self: center;
+    margin-top: 1em;
+    width: 90%;
+    height: auto;
+    border: 3px solid black;
+   
+}
+article p:nth-of-type(2){
+    font-size: medium;
+    margin: 0;
+    margin-bottom: 1em;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+article a{
+    font-size: small;
+    text-align: center;
+    margin: 25px;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 25px;
+    background-color: #dfa073;
+    width: 6em;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    transition: all 1s ease;
+}
+article a:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px black;
+}
+footer{
+    display: flex;
+    border: 3px solid black;
+    margin: 3em;
+    box-shadow: 5px 5px black;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#dfa073;
+}
+footer img{
+    width: 5em;
+    position: absolute;
+    left: 50%;
+}
+footer ul{
+    list-style: none;
+    margin: 0;
+    margin-right: 2em;
+}
+footer p{
+    font-size:medium;
+    margin: 0;
+}
+footer a{
+    color: black;
+}
+.vlieg{
+    position: absolute;
+    top: 450px;
+    left: -100px;
+    animation: vlieg 2s ease-out forwards;
+}
+@keyframes vlieg {
+  0% {
+    left: -100px;
+    opacity: 1;
+  }
+  90% {
+    left: 20vw;
+    opacity: 1;
+
+  }
+  100% {
+    left: 100vw;
+    opacity: 0;
+  }
+}
+.personages section {
+  position: relative;
+  padding-left: 4em;
+  display: flex;
+}
+.personages article {
+  position: absolute;
+  opacity: 0; 
+  left: 4em;
+  top: 5em;
+  text-align: center;
+}
+.personages article img{
+    width: 10em;
+}
+.personages article div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.personages h2{
+    flex-basis: 0;
+    padding-left: 0;
+}
+.personages article p{
+    text-align:start;
+    margin-top: 2em;
+    border: none;
+    margin-left: 1.5em;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 8em);
+    gap: 4em;
+    margin-left: auto;
+    margin-right: 5em;
+}
+.grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+}
+.diego:hover ~ .diego_tekst { 
+    opacity: 1; 
+}
+.denise:hover ~ .denise_tekst { 
+    opacity: 1; 
+}
+.stellan:hover ~ .stellan_tekst { 
+    opacity: 1; 
+}
+.kyle:hover ~ .kyle_tekst { 
+    opacity: 1; 
+}
+.adria:hover ~ .adria_tekst { 
+    opacity: 1; 
+}
+.genevieve:hover ~ .genevieve_tekst { 
+    opacity: 1; 
+}
+.elizabeth:hover ~ .elizabeth_tekst { 
+    opacity: 1; 
+}
+.anton:hover ~ .anton_tekst { 
+    opacity: 1; 
+}
+.faye:hover ~ .faye_tekst { 
+    opacity: 1; 
+}
+/* ":hover ~ " BRON chatgpt met promt: ik wil graag dat een :hover op het ene element een ander element aanpast. is hier een manier voor? */
+.afleveringen section{
+    padding-left: 0;
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex: 0 0 80vw;  
+    scroll-snap-align: center;
+}
+.afleveringen article{
+    width: 50em;
+    position: relative;
+    height: 24em;
+}
+.afleveringen article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+}
+.afleveringen h2{
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+}
+.afleveringen h3{
+    position: absolute;
+    font-size: 3em;
+    bottom: 1em;
+    left: 1em;
+    color: white;
+}
+iframe{
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+}
+.afleveringen div{
+    display: flex;
+    overflow-x: scroll;
+    gap: 2em;
+    scroll-snap-type: x mandatory;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type */
+    padding: 0 5em;
+}
+.afleveringen section a{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.afleveringen section a:hover{
+    transform: scale(1);
+    opacity: 0.5;
+}
